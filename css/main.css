@@ -1,0 +1,29 @@
+/* CSS for WATS 3020 Sandwich Machine Assignment */
+
+.receipt {
+    background: url('../images/paper.jpg') repeat top center;
+    width: 300px;
+    min-height: 300px;
+    padding: 1rem 1rem 2rem 1rem;
+    font-family: Courier, monospace;
+    color: #666;
+    font-size: 0.8rem;
+    box-shadow: -5px -5px 5px rgba(0,0,0,0.4);
+    border: solid 1px rgba(0,0,0,0.2);
+    margin: 1rem auto;
+}
+
+.receipt h1{
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+#receipt-text {
+    margin-top: 1rem;
+}
+
+.text-right {
+    text-align: right;
+}
