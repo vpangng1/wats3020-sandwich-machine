@@ -79,7 +79,6 @@ let totalPrice = null;
 let receiptTemplate = `
     <p>SANDWICH ORDER</p>
     <p>Bread: wheat</p>
-    <p>Cheese: swiss</p>
     <p>Meat: ham, turkey</p>
     <p>Toppings: lettuce, tomato, peppers, spinach</p>
     <p>Condiments: mayo, mustard, thousand island</p>
