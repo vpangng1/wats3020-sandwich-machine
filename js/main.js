@@ -35,6 +35,19 @@ let orderTax = subtotal * 0.065;
 
 let totalPrice = subtotal + orderTax;
 
+//Tip calculation
+
+let tips = {
+  tenPer: 0.10,
+  fifteenPer: 0.15,
+  twentyPer: 0.20
+};
+
+let tipTenPer = totalPrice + tips.tenPer;
+let tipFifteenPer = totalPrice + tips.fifteenPer;
+let tipTwentyPer = totalPrice + tips.twentyPer;
+
+
 //Display receipt to user based on calculations above
 
 let receiptTemplate = `
@@ -53,6 +66,21 @@ let receiptTemplate = `
     <p class="text-right">Tax: $${orderTax.toFixed(2)}</p>
     <p class="text-right">--------</p>
     <p class="text-right">Total: $${totalPrice.toFixed(2)}</p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p>Suggested Tip Amounts for your convenience</p>
+    <p>--------</p>
+    <p>10% - $${tipTenPer.toFixed(2)}</p>
+    <p>15% - $${tipFifteenPer.toFixed(2)}</p>
+    <p>20% - $${tipTwentyPer.toFixed(2)}</p>
+    <p>--------</p>
+    <p></p>
+    <p></p>
+    <p>Tip..... ___________</p>
+    
+
+
 `
 
 ///////////////////////////////////////////////////////////////////////
