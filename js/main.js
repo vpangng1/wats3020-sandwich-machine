@@ -26,7 +26,7 @@ let condimentArray = condimentType.split(',');
 
 let meatCost = meatArray.length * prices.meat;
 let toppingCost = toppingArray.length * prices.topping;
-let condimentCost = condimentType.length * prices.condiment;
+let condimentCost = condimentArray.length * prices.condiment;
 
 let subtotal = meatCost + toppingCost + condimentCost + prices.sandwich;
 
@@ -43,9 +43,9 @@ let tips = {
   twentyPer: 0.20
 };
 
-let tipTenPer = totalPrice + tips.tenPer;
-let tipFifteenPer = totalPrice + tips.fifteenPer;
-let tipTwentyPer = totalPrice + tips.twentyPer;
+let tipTenPer = totalPrice + (tips.tenPer * totalPrice);
+let tipFifteenPer = totalPrice + (tips.fifteenPer * totalPrice);
+let tipTwentyPer = totalPrice + (tips.twentyPer * totalPrice);
 
 
 //Display receipt to user based on calculations above
